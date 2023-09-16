@@ -56,9 +56,9 @@ export class FsmDemo extends Component {
         this.fsm.tick(true);
     }
 }
-
+```
 
 # old versions:
 c# fsm: https://github.com/hont127/FSM
 c# fast fsm: https://github.com/hont127/FastFSM
-```
+
