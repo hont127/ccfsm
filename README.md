@@ -1,7 +1,7 @@
 # ccfsm
 从unity移植到cocos creator的fsm状态机
 
-#demo:
+# demo:
 ```typescript
 export class FsmDemo extends Component {
 
@@ -58,7 +58,7 @@ export class FsmDemo extends Component {
 }
 
 
-#old versions:
+# old versions:
 c# fsm: https://github.com/hont127/FSM
 c# fast fsm: https://github.com/hont127/FastFSM
 ```
