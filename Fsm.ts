@@ -46,18 +46,18 @@ export class Fsm {
 		return this.stateList.find(s => s.identifier == stateIdentifier);
     }
 	
-	// public TransitionInfo configTransitionInfo(stateIdentifier:number, dstStateIdentifier:number) {
-		// if (!this.hasState(stateIdentifier))
-			// this.addState(stateIdentifier);
+	public configTransitionInfo(stateIdentifier:number, dstStateIdentifier:number) : TransitionInfo|null {
+		if (!this.hasState(stateIdentifier))
+			this.addState(stateIdentifier);
 
-		// if (!this.hasState(dstStateIdentifier))
-			// this.addState(dstStateIdentifier);
+		if (!this.hasState(dstStateIdentifier))
+			this.addState(dstStateIdentifier);
 
-		// if (!this.hasTransition(stateIdentifier, dstStateIdentifier))
-			// this.addTransition(stateIdentifier, dstStateIdentifier, null);
+		if (!this.hasTransition(stateIdentifier, dstStateIdentifier))
+			this.addTransition(stateIdentifier, dstStateIdentifier, null);
 
-		// return this.getTransition(stateIdentifier, dstStateIdentifier);
-    // }
+		return this.getTransition(stateIdentifier, dstStateIdentifier);
+    }
 
     public transition(dstStateIdentifier: number, arg: any = null, immediateUpdate: boolean = true): void {
         const dstTransition = this.currentState.transitionList.find(t => t.dstState.identifier === dstStateIdentifier);
