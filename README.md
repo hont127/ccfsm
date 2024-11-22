@@ -58,8 +58,3 @@ export class FsmDemo extends Component {
 }
 ```
 
-# Old versions:
-c# fsm: https://github.com/hont127/FSM
-</br>
-c# fast fsm: https://github.com/hont127/FastFSM
-
